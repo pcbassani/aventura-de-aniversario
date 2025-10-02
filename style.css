@@ -1,0 +1,97 @@
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0e6f2;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-family: 'Cinzel', serif;
+    color: #5a3d6b;
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+.subtitle {
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+/* NOVO: Estilo para mostrar o resultado do dado */
+#dice-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    background-color: #faf7fc;
+    border: 3px solid #8e44ad;
+    border-radius: 15px;
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    color: #5a3d6b;
+    transition: transform 0.5s ease;
+}
+#dice-display.rolling {
+    transform: rotate(360deg) scale(0.5);
+}
+button {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #5a3d6b;
+}
+#resultArea {
+    margin-top: 30px;
+}
+#rollResultText {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #5a3d6b;
+}
+#prizeCard {
+    margin-top: 15px;
+    padding: 25px;
+    border: 3px solid;
+    border-radius: 10px;
+    background-color: #faf7fc;
+}
+#prizeTitle {
+    font-family: 'Cinzel', serif;
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+}
+#prizeDescription {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+.hidden {
+    display: none;
+}
+.border-critical-fail { border-color: #8B0000; }
+.border-fail { border-color: #A9A9A9; }
+.border-success { border-color: #8e44ad; }
+.border-critical-success { border-color: #FFD700; }

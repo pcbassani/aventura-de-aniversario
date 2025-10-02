@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Aventura de Aniversário!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- A nova biblioteca é importada aqui. É um link estável. -->
+    <script src="https://cdn.jsdelivr.net/npm/dice-notation-js@1.0.1/dist/dice.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Role pela sua Recompensa, Aventureiro!</h1>
+        <p class="subtitle">Feliz aniversário! Que seus dados rolem a seu favor.</p>
+
+        <!-- Sem animação 3D, mas com um resultado claro e imediato -->
+        <div id="dice-display">
+            <div class="dice-placeholder">?</div>
+        </div>
+
+        <button id="rollButton">Testar sua Sorte (Rolar d20 )</button>
+
+        <div id="resultArea" class="hidden">
+            <p id="rollResultText"></p>
+            <div id="prizeCard">
+                <h2 id="prizeTitle"></h2>
+                <p id="prizeDescription"></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
