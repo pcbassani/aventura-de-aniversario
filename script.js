@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         muitoBom: [ // 14-16
             { titulo: "Loot Raro!", descricao: "Você desbloqueou uma noite de cinema VIP em casa. Sua escolha de filme, com direito a pipoca, refri e tudo mais." },
             { titulo: "Chef de Elite", descricao: "Você ganhou um jantar especial, com seu prato favorito cozinhado por mim." },
-            { titulo: "Cuca Lendária", descricao: "uau, excelente! Agora, te devo uma brejinha" }
+            { titulo: "Poção Lendária", descricao: "uau, excelente! Agora, te devo uma brejinha. E você tem que tomar!" }
         ],
         otimo: [ // 17-19
             { titulo: "Tesouro Épico!", descricao: "Você ganhou uma massagem completa para curar todos os 'danos de batalha' da semana." },
